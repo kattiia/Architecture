@@ -138,7 +138,7 @@ public:
                 }
             }
            
-            else if (hasSubstr(request.getURI(), "/search_conf"))
+            else if (hasSubstr(request.getURI(), "/search"))
             {
 
                 std::string fn = form.get("conf_name");

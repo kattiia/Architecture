@@ -186,7 +186,7 @@ namespace database
             Poco::Data::Session session = database::Database::get().create_session();
             Poco::Data::Statement insert(session);
 
-            insert << "INSERT INTO reports (report_name,room,text) VALUES($1, $2, $3, $4)",
+            insert << "INSERT INTO reports (report_name,room,text) VALUES($1, $2, $3)",
                 use(_report_name),
                 use(_room),
                 use(_text);
@@ -240,7 +240,7 @@ namespace database
     }
 
 
-    const long &Report::get_room() const
+    long Report::get_room() const
     {
         return _room;
     }

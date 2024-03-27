@@ -19,7 +19,7 @@ users_table = Table(
     extend_existing=True
 )
 
-index1 = Index('ind', users_table.c.first_name)
+#index1 = Index('ind', users_table.c.first_name)
 
 confs_table = Table(
     'confs', metadata,
@@ -30,7 +30,7 @@ confs_table = Table(
     extend_existing=True
 )
 
-index2 = Index('ind', confs_table.c.conf_name)
+#index2 = Index('ind', confs_table.c.conf_name)
 
 reports_table = Table(
     'reports', metadata,
@@ -41,7 +41,7 @@ reports_table = Table(
     extend_existing=True
 )
 
-index3 = Index('ind', reports_table.c.report_name)
+#index3 = Index('ind', reports_table.c.report_name)
 
 # Создаем таблицу в базе данных (если ее нет)
 metadata.create_all(engine)

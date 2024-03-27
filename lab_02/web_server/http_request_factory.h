@@ -60,7 +60,7 @@ public:
             hasSubstr(request.getURI(),"/search") ||
             hasSubstr(request.getURI(),"/auth")) 
             return new UserHandler(_format);
-        else if (hasSubstr(request.getURI(),"/conf") ||
+        else if (hasSubstr(request.getURI(),"/conf")||
             hasSubstr(request.getURI(),"/search_conf")) 
             return new ConfHandler(_format);
         else if (hasSubstr(request.getURI(),"/report")||

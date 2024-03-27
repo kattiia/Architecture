@@ -23,7 +23,7 @@ services:
   conf:
     tty: true
     container_name: lab_02_conf
-    command : bash start.sh
+    command : #bash start.sh
     build:
       context: .
       dockerfile: my_service/Dockerfile
@@ -43,7 +43,7 @@ services:
   report:
     tty: true
     container_name: lab_02_report
-    command : bash start.sh
+    command : #bash start.sh
     build:
       context: .
       dockerfile: my_service/Dockerfile

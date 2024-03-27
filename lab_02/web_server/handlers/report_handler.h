@@ -138,7 +138,7 @@ public:
                 }
             }
            
-            else if (hasSubstr(request.getURI(), "/search_report"))
+            else if (hasSubstr(request.getURI(), "/search"))
             {
 
                 std::string fn = form.get("report_name");
@@ -159,7 +159,7 @@ public:
                 {
                     database::Report report;
                     report.report_name() = form.get("report_name");
-                    report.room() = std::stol(form.get("room"));
+                    report.room() = atol(form.get("room").c_str());
                     report.text() = form.get("text");
 
                     bool check_result = true;

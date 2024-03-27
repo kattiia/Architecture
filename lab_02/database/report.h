@@ -20,12 +20,12 @@ namespace database
 
             long             get_id() const;
             const std::string &get_report_name() const;
-            const long &get_room() const;
+            long             get_room() const;
             const std::string &get_text() const;
 
             long&        id();
             std::string &report_name();
-            long &room();
+            long&        room();
             std::string &text();
 
             static void init();
