@@ -1,5 +1,4 @@
 {
-    "cmake.sourceDirectory": "/opt/arch/hl_mai_01_cpp",
     "files.associations": {
         "cctype": "cpp",
         "clocale": "cpp",
@@ -19,7 +18,6 @@
         "chrono": "cpp",
         "compare": "cpp",
         "concepts": "cpp",
-        "condition_variable": "cpp",
         "cstdint": "cpp",
         "deque": "cpp",
         "list": "cpp",
@@ -45,23 +43,19 @@
         "utility": "cpp",
         "fstream": "cpp",
         "initializer_list": "cpp",
-        "iomanip": "cpp",
         "iosfwd": "cpp",
         "iostream": "cpp",
         "istream": "cpp",
         "limits": "cpp",
-        "mutex": "cpp",
         "new": "cpp",
         "numbers": "cpp",
         "ostream": "cpp",
-        "semaphore": "cpp",
         "sstream": "cpp",
         "stdexcept": "cpp",
-        "stop_token": "cpp",
         "streambuf": "cpp",
-        "thread": "cpp",
         "cfenv": "cpp",
         "cinttypes": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "iomanip": "cpp"
     }
 }
