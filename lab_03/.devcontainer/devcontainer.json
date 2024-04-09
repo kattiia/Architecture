@@ -1,0 +1,27 @@
+{
+    "name": "lab_03",
+
+    "dockerComposeFile": "../docker-compose.yml",
+
+    "service": "lab_03",
+
+    "workspaceFolder": "/opt/arch",
+
+    //"forwardPorts": [8080],
+
+    "customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode.cpptools-extension-pack",
+                "ckolkman.vscode-postgres",
+                "42crunch.vscode-openapi",
+                "mongodb.mongodb-vscode",
+                "humao.rest-client"
+            ]
+		}
+	}
+}
