@@ -28,4 +28,4 @@ RUN ldconfig
 COPY . /app
 WORKDIR /app
 RUN mkdir build && cd build && cmake .. && make && cd ..
-ENTRYPOINT [ "build/lab_03" ]
+#ENTRYPOINT [ "/app/build/lab_03" ]

@@ -3,6 +3,7 @@ services:
   user:
     tty: true
     container_name: lab_03_user
+    command : bash start.sh
     build:
       context: .
       dockerfile: my_service/Dockerfile
@@ -22,6 +23,7 @@ services:
   conf:
     tty: true
     container_name: lab_03_conf
+    command : bash start.sh
     build:
       context: .
       dockerfile: my_service/Dockerfile
@@ -36,9 +38,10 @@ services:
       - 8081:8080
     networks:
       - lab_03-network  
-  comment:
+  report:
     tty: true
-    container_name: lab_03_comment
+    container_name: lab_03_report
+    command : bash start.sh
     build:
       context: .
       dockerfile: my_service/Dockerfile
@@ -53,10 +56,10 @@ services:
       - 8082:8080
     networks:
       - lab_03-network
-  db_init:
+  db_create:
     tty: true
     container_name: lab_03_db_create
-    command : bash start.sh
+    command : bash mongo_init.sh
     build:
       context: .
       dockerfile: my_service/Dockerfile_db_create

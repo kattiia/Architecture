@@ -2,7 +2,7 @@ import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, Index, DateTime
 from sqlalchemy.sql import func
 
-engine = create_engine("postgresql+psycopg2://root:root@lab_02_postgres/archdb", echo = False)
+engine = create_engine("postgresql+psycopg2://root:root@lab_03_postgres/archdb", echo = False)
 
 # Создаем объект MetaData
 metadata = MetaData()
